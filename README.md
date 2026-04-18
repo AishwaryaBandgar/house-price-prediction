@@ -27,7 +27,7 @@ This project demonstrates a machine learning approach to predicting house prices
 
 ---
 
-## ⚙️ Data Preprocessing
+## Data Preprocessing
 - Checked for missing values
 - Feature scaling (if applied)
 - Train-test split
