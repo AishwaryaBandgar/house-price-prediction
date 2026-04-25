@@ -1,45 +1,16 @@
 # House Price Prediction using Machine Learning
 
 ## Overview
-This project demonstrates a machine learning approach to predicting house prices using regression techniques. A synthetic dataset was generated based on multiple housing features to simulate real-world conditions.
+This project predicts house prices based on features such as area, number of bedrooms, house age, and distance from the city center.
 
----
+A Linear Regression model is used, and the dataset is synthetically generated for learning and demonstration purposes.
 
-## Dataset
-- The dataset is **synthetically generated** using the following features:
-  - Area
-  - Number of Bedrooms
-  - House Age
-  - Distance from city center
-
-- Target variable (Price) was calculated using a custom formula with added random noise:
-  
-  Price = (Area * 0.03 + Bedrooms * 5 - House_Age * 0.7 - Distance * 1.5 + noise)
-
-- Noise was added using a normal distribution to simulate real-world variation.
-
----
-
-## Exploratory Data Analysis (EDA)
-- Analyzed relationships between features and price
-- Observed strong correlation between Area and Price
-- Visualized feature impact using plots and heatmaps
-
----
-
-## Data Preprocessing
-- Checked for missing values
-- Feature scaling (if applied)
-- Train-test split
-
----
-
-## Model Building
-- Applied Linear Regression model
-- Trained on synthetic dataset
-- Learned relationships between input features and price
-
----
+ ## Features
+Exploratory Data Analysis (EDA)
+Feature relationship visualization
+Linear Regression model training
+Model evaluation (MAE, R² Score)
+Interactive web app using Streamlit
 
 ## Model Performance
 - **R² Score:** 0.91  
@@ -48,39 +19,46 @@ This project demonstrates a machine learning approach to predicting house prices
 
 The high R² score is expected as the data follows a defined mathematical relationship with controlled noise.
 
----
-
-## Visualizations
-- Correlation Heatmap  
-- Feature vs Price plots  
-- Predicted vs Actual comparison  
-
----
-
 ## Tech Stack
-- Python  
-- Pandas  
-- NumPy  
-- Scikit-learn  
-- Matplotlib  
-- Seaborn  
+Python  
+streamlit
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+joblib
 
----
+## Model Details
+Algorithm: Linear Regression
+Input Features:
+    Area
+    Bedrooms
+    House Age
+    Distance
+Target
+    Price
 
-## Key Learning
-- Understanding regression modeling
-- Impact of features on prediction
-- Effect of noise in data
-- Model evaluation using R², RMSE, MSE
+## Installation and Setup
+1. Clone the repository
+git clone https://github.com/AishwaryaBandgar/house-price-analysis.git
+cd house-price-analysis
 
----
+3. Install dependencies
+pip install -r requirements.txt
+
+5. Run the Streamlit app
+streamlit run app.py
+
+## Note
+This project uses a synthetic dataset, so results may not reflect real-world housing prices.
 
 ## Future Improvements
-- Use real-world datasets (e.g., housing market data)
-- Apply advanced models (Random Forest, XGBoost)
-- Deploy using Streamlit or Flask
-
----
+Use real-world datasets
+Try advanced models (Random Forest, XGBoost)
+Deploy the app online
 
 ## Author
 Aishwarya Bandgar  
+
+---
